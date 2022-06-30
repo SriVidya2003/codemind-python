@@ -1,4 +1,4 @@
-n= int (input())
+n=int(input())
 sum=0
 r=0
 while n>0:
