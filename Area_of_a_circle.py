@@ -1,4 +1,4 @@
-pi=3.14
-r=float(input())
-area=pi*r*r
-print('%.2f' %area)
+PI=3.14
+radius=float(input())
+area=PI*radius*radius
+print("%0.2f" %area)
