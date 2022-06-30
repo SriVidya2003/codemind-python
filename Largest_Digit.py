@@ -6,4 +6,4 @@ while n>0:
     if(r>max):
         max=r
     n=n//10
-print(max)    
+print(max)
