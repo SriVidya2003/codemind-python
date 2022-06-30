@@ -21,6 +21,4 @@ for i in range(1,n):
         break
 if x==0:
     print("-1")
-                    
-                    
-                    
+    
