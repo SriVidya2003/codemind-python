@@ -1,21 +1,22 @@
-n=int(input())
-count=0
+def prime(n):
+    count=0
+    for i in range(2,n):
+        if n%i==0:
+            count=1
+            return False
+    if count==0:
+        return True
+a=int(input())
 sum=0
-for i in range(2,n):
-    if n%i==0:
-        count+=1
-if count!=0:
-    print("not prime")
-else:
-    c=0
-    while(n!=0):
-        r=n%10
+if prime(a):
+    temp=a
+    while(temp!=0):
+        r=temp%10
         sum=sum*10+r
-        n=n//10
-    for i in range(2,sum):
-        if sum%i==0:
-            c+=1
-    if c==0:
+        temp=temp//10
+    if prime(sum):
         print("circular prime")
     else:
         print("prime but not a circular prime")
+else:
+    print("not prime")
